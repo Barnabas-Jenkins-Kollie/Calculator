@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="calculator" >
+        <input type="text"  id="display" readonly>
+        <div id="keys">
+            <button onclick="append_to_display('7')">7</button>
+            <button onclick="append_to_display('8')">8</button>
+            <button onclick="append_to_display('9')">9</button>
+            <button onclick="append_to_display('+')" class="colorbtn">+</button>
+            <button onclick="append_to_display('4')">4</button>
+            <button onclick="append_to_display('5')">5</button>
+            <button onclick="append_to_display('6')">6</button>
+            <button onclick="append_to_display('-')" class="colorbtn">-</button>
+            <button onclick="append_to_display('3')">3</button>
+            <button onclick="append_to_display('2')">2</button>
+            <button onclick="append_to_display('1')">1</button>
+            <button onclick="append_to_display('*')" class="colorbtn">x</button>
+            <button onclick="append_to_display('0')">0</button>
+            <button onclick="append_to_display('/')" class="colorbtn">/</button>
+            <button onclick="append_to_display('.')">.</button>
+            <button onclick="append_to_display('%')" class="colorbtn">%</button>
+            <button onclick="calculate()" class="colorbtn">=</button>
+            <button onclick="clear_display()">C</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script> 
+</body>
+</html>
